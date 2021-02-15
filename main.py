@@ -2,8 +2,6 @@ import sys
 import os
 import json
 
-to_be_removed = []
-
 lbl_file_dir = './'
 try:
     os.mkdir('./Filtered_lbl')
