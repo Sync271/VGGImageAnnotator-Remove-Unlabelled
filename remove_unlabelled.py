@@ -1,3 +1,4 @@
+'''Removes keys associated with unlabelled images from the .json files'''
 import sys
 import os
 import json
@@ -5,12 +6,12 @@ import json
 lbl_file_dir = './'  # input folder
 
 # creates folder to put the filtered .json files if the folder does not already exist
-if os.path.exists('./Filtered_lbl'):
+if os.path.exists('./Filtered'):
     None
 else:
-    os.mkdir('./Filtered_lbl')
+    os.mkdir('./Filtered')
 
-out_dir = './Filtered_lbl/'  # output folder
+out_dir = './Filtered/'  # output folder
 
 for lbl_file in os.listdir(lbl_file_dir):  # looks for all files in the folder
     if lbl_file.endswith('.json'):  # filters json files in the folder
